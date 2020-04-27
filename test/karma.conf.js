@@ -32,6 +32,9 @@ module.exports = function (config) {
 
     webpack: require('../webpack.config')({ coverage: true, karma: true }),
 
+    // plugins: [
+    //   require('../node_modules/karma-verbose-reporter')
+    // ],
     /*
      * test results reporter to use
      *
@@ -39,7 +42,7 @@ module.exports = function (config) {
      * available reporters: https://npmjs.org/browse/keyword/karma-reporter
      */
 
-    reporters: [ 'mocha', 'progress', 'coverage-istanbul' ],
+    reporters: [ 'mocha', 'progress', 'coverage-istanbul', 'verbose' ],
 
     coverageIstanbulReporter: {
       reports: [ 'html', 'lcovonly', 'text-summary' ],

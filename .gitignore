@@ -36,3 +36,4 @@ node_modules
 /test/coverage-jest
 /test/coverage-karma
 package-lock.json
+.chrome
